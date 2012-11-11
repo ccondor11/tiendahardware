@@ -41,6 +41,15 @@ namespace MVCVenta.Controllers
                                   }).ToList();
 
             listaProductos = productos.ConvertAll(o => new ProductoList(o.Pk_eProducto,o.dominio,o.producto,o.dPrecio,o.cEspecificacion,o.bImagen));
+
+            //Listado de Categorias
+            //var dominios = from c in _data.TB_Dominios select c;
+            //ViewData["Dominios"] = new SelectList(dominios, "Pk_eDominio", "cDescripcion");
+            List<Dominio> listaDominios = null;
+            var dominios = (from c in _data.TB_Dominios select c).ToList();
+            listaDominios = dominios.ConvertAll(o => new Dominio(o.Pk_eDominio, o.cDescripcion));
+            ViewData["ListOfDominios"] = listaDominios;
+            //ViewData["Dominios"] = new SelectList(dominios, "Pk_eDominio", "cDescripcion");
              
             return View(listaProductos);
         }
