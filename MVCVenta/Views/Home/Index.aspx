@@ -14,7 +14,7 @@
 
 
 
-<table>
+<table width="150">
  <tr>
             <th >
                 Categorias
@@ -53,7 +53,7 @@
             <% foreach (var item in Model)
                {%>
             <td>
-                <table border="0" width="270">
+                <table border="0" width="100%">
                     <tr>
                         <td align="center">
                             <img alt="<%: item.Descripcion%>" src="../../Imagenes/Productos/<%: item.ID%>.png"
