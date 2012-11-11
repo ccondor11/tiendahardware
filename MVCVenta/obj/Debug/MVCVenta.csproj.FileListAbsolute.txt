@@ -8,3 +8,8 @@ F:\MVCVenta\MVCVenta\bin\MVCVenta.pdb
 F:\MVCVenta\MVCVenta\obj\Debug\ResolveAssemblyReference.cache
 F:\MVCVenta\MVCVenta\obj\Debug\MVCVenta.dll
 F:\MVCVenta\MVCVenta\obj\Debug\MVCVenta.pdb
+F:\Centralizado\tiendahardware\MVCVenta\bin\MVCVenta.dll
+F:\Centralizado\tiendahardware\MVCVenta\bin\MVCVenta.pdb
+F:\Centralizado\tiendahardware\MVCVenta\obj\Debug\ResolveAssemblyReference.cache
+F:\Centralizado\tiendahardware\MVCVenta\obj\Debug\MVCVenta.dll
+F:\Centralizado\tiendahardware\MVCVenta\obj\Debug\MVCVenta.pdb
