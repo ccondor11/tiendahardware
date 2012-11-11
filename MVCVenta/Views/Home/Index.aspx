@@ -14,7 +14,7 @@
 
 
 
-<table>
+<table width="150">
  <tr>
             <th >
                 Categorias
@@ -27,9 +27,18 @@
        {%>
 <tr>
 <td>
-    <a href="#">
+    <%--<a href="#">
    <%: item.Descripcion%>
-      </a>
+      </a>--%>
+
+    <%:  Html.ActionLink(item.Descripcion, 
+                "",   // <-- ActionMethod
+                "Home",  // <-- Controller Name.
+                new { id = item.ID }, // <-- Route arguments.
+                null  // <-- htmlArguments .. which are none. You need this value
+                      //     otherwise you call the WRONG method ...
+                      //     (refer to comments, below).
+                ) %>
 </td>
 </tr>
  <%}%>
@@ -53,7 +62,7 @@
             <% foreach (var item in Model)
                {%>
             <td>
-                <table border="0" width="270">
+                <table border="0" width="100%">
                     <tr>
                         <td align="center">
                             <img alt="<%: item.Descripcion%>" src="../../Imagenes/Productos/<%: item.ID%>.png"
