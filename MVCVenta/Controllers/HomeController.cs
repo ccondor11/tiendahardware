@@ -23,13 +23,14 @@ namespace MVCVenta.Controllers
             _data = new VentaDataClassesDataContext();
         }
 
-        public ActionResult Index()
+        public ActionResult Index(int dominio )
         {
             //ViewData["Message"] = "Welcome to ASP.NET MVC!";
                        List<ProductoList> listaProductos = null;
             var productos = (from p in _data.TB_Productos
                              join d in _data.TB_Dominios
                              on p.Fk_eDominio equals d.Pk_eDominio
+                             where p.Fk_eDominio == dominio
                              select new
                                   {
                                       p.Pk_eProducto,

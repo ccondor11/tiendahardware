@@ -27,9 +27,18 @@
        {%>
 <tr>
 <td>
-    <a href="#">
+    <%--<a href="#">
    <%: item.Descripcion%>
-      </a>
+      </a>--%>
+
+    <%:  Html.ActionLink(item.Descripcion, 
+                "",   // <-- ActionMethod
+                "Home",  // <-- Controller Name.
+                new { id = item.ID }, // <-- Route arguments.
+                null  // <-- htmlArguments .. which are none. You need this value
+                      //     otherwise you call the WRONG method ...
+                      //     (refer to comments, below).
+                ) %>
 </td>
 </tr>
  <%}%>
