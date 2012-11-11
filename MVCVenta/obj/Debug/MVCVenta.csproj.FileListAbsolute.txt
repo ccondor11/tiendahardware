@@ -8,8 +8,16 @@ F:\MVCVenta\MVCVenta\bin\MVCVenta.pdb
 F:\MVCVenta\MVCVenta\obj\Debug\ResolveAssemblyReference.cache
 F:\MVCVenta\MVCVenta\obj\Debug\MVCVenta.dll
 F:\MVCVenta\MVCVenta\obj\Debug\MVCVenta.pdb
+<<<<<<< HEAD
 D:\UPC\7-CICLO\SISTEMAS-DISTRIBUIDOS\PROYECTO\tiendahardware\MVCVenta\bin\MVCVenta.dll
 D:\UPC\7-CICLO\SISTEMAS-DISTRIBUIDOS\PROYECTO\tiendahardware\MVCVenta\bin\MVCVenta.pdb
 D:\UPC\7-CICLO\SISTEMAS-DISTRIBUIDOS\PROYECTO\tiendahardware\MVCVenta\obj\Debug\MVCVenta.csprojResolveAssemblyReference.cache
 D:\UPC\7-CICLO\SISTEMAS-DISTRIBUIDOS\PROYECTO\tiendahardware\MVCVenta\obj\Debug\MVCVenta.dll
 D:\UPC\7-CICLO\SISTEMAS-DISTRIBUIDOS\PROYECTO\tiendahardware\MVCVenta\obj\Debug\MVCVenta.pdb
+=======
+F:\Centralizado\tiendahardware\MVCVenta\bin\MVCVenta.dll
+F:\Centralizado\tiendahardware\MVCVenta\bin\MVCVenta.pdb
+F:\Centralizado\tiendahardware\MVCVenta\obj\Debug\ResolveAssemblyReference.cache
+F:\Centralizado\tiendahardware\MVCVenta\obj\Debug\MVCVenta.dll
+F:\Centralizado\tiendahardware\MVCVenta\obj\Debug\MVCVenta.pdb
+>>>>>>> ba1e7d7963e27de6a5a6855b7d789a862da3931b

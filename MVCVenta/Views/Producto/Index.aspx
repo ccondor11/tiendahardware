@@ -8,6 +8,10 @@
 
     <h2>Listado de Productos</h2>
 
+       <p>
+        <%: Html.ActionLink("Crear Nuevo Producto", "Create") %>
+       </p>
+
     <table>
         <tr>
             <th></th>
@@ -35,9 +39,9 @@
     
         <tr>
             <td>
-                <%: Html.ActionLink("Edit", "Edit", new { id=item.ID }) %> |
-                <%: Html.ActionLink("Details", "Details", new { id=item.ID })%> |
-                <%: Html.ActionLink("Delete", "Delete", new { id=item.ID })%>
+                <%: Html.ActionLink("Editar", "Edit", new { id=item.ID }) %> |
+                <%: Html.ActionLink("Detalles", "Details", new { id=item.ID })%> |
+                <%: Html.ActionLink("Eliminar", "Delete", new { id=item.ID })%>
             </td>
             <td>
                 <%: item.ID %>
@@ -63,9 +67,7 @@
 
     </table>
 
-    <p>
-        <%: Html.ActionLink("Crear Nuevo Producto", "Create") %>
-    </p>
+ 
 
 </asp:Content>
 
