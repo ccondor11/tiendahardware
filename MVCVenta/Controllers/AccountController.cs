@@ -8,7 +8,7 @@ using System.Web.Mvc;
 using System.Web.Routing;
 using System.Web.Security;
 using MVCVenta.Models;
-
+using MVCVenta.ViewModels;
 namespace MVCVenta.Controllers
 {
 
@@ -41,6 +41,25 @@ namespace MVCVenta.Controllers
         {
             if (ModelState.IsValid)
             {
+
+                  List<Usuario> listaUsuarios = null;
+                // var usuarios = (from p in _data.TB_Productos
+                //                 join d in _data.TB_Dominios
+                //                 on p.Fk_eDominio equals d.Pk_eDominio
+                //                 where p.Fk_eDominio == id
+                //                 select new
+                //                 {
+                //                     p.Pk_eProducto,
+                //                     dominio = d.cDescripcion,
+                //                     producto = p.cDescripcion,
+                //                     p.dPrecio,
+                //                     p.cEspecificacion,
+                //                     p.bImagen
+                //                 }).ToList();
+
+                //listaProductos = productos.ConvertAll(o => new ProductoList(o.Pk_eProducto, o.dominio, o.producto, o.dPrecio, o.cEspecificacion, o.bImagen));
+
+
                 if (MembershipService.ValidateUser(model.UserName, model.Password))
                 {
                     FormsService.SignIn(model.UserName, model.RememberMe);
