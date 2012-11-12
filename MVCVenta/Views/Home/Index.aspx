@@ -32,7 +32,7 @@
       </a>--%>
 
     <%:  Html.ActionLink(item.Descripcion, 
-                "",   // <-- ActionMethod
+                "Index",   // <-- ActionMethod
                 "Home",  // <-- Controller Name.
                 new { id = item.ID }, // <-- Route arguments.
                 null  // <-- htmlArguments .. which are none. You need this value
@@ -46,7 +46,7 @@
 
 
 </td>
-<td>
+<td valign="top">
 
 
         
@@ -83,7 +83,15 @@
                             </b>
                             <br />
                             <br />
-                            <a href="#">Comprar </a>
+                           
+                             <%:  Html.ActionLink("Comprar", 
+                "Index",   // <-- ActionMethod
+                 "CarritoCompras",  // <-- Controller Name.
+                new { id = item.ID }, // <-- Route arguments.
+                null  // <-- htmlArguments .. which are none. You need this value
+                      //     otherwise you call the WRONG method ...
+                      //     (refer to comments, below).
+                ) %>
                         </td>
                     </tr>
                 </table>
