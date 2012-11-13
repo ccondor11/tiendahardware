@@ -574,7 +574,7 @@ namespace MVCVenta.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_cDireccion", DbType="VarChar(10) NOT NULL", CanBeNull=false)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_cDireccion", DbType="VarChar(100) NOT NULL", CanBeNull=false)]
 		public string cDireccion
 		{
 			get

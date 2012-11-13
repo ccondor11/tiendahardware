@@ -22,7 +22,7 @@
     <Type Name="TB_Cliente">
       <Column Name="Pk_eCliente" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="cTelefono" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
-      <Column Name="cDireccion" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="cDireccion" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
       <Column Name="cTipCliente" Type="System.String" DbType="VarChar(3) NOT NULL" CanBeNull="false" />
       <Column Name="dFecRegistro" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
       <Association Name="TB_Cliente_TB_Usuario" Member="TB_Usuarios" ThisKey="Pk_eCliente" OtherKey="Fk_eCliente" Type="TB_Usuario" />
